@@ -1,0 +1,37 @@
+BITACORA DÍA 2
+
+
+ETAPA 1
+VERSIÓN DE UBUNTU
+Ubuntu 26.04.1 LTS
+
+
+VERSIÓN DE PY Y DÓNDE ESTÁ
+Python 3.14.4
+/usr/bin/python3
+
+
+¿Qué pasó con la línea 4 de hola.py y por qué?
+No se ejecutó. Porque hubo un error en la línea 3, se le pidió que imprimiera la variable mensaje_oculto pero nunca fue creada dicha variable
+
+CLASIFICACIÓN
+Sistema operativo: Ubuntu
+Editor: Vs Code
+Intérprete: Python
+Compilador: gcc
+Navegador: Chrome
+
+
+ETAPA 2
+1. ¿Cómo estaba instalado VS Code en tu equipo (snap, .deb o no estaba)? 
+Estaba instalado como snap
+
+Se desinstaló con: sudo snap remove code
+
+Se instaló con: sudo apt install ./code_*.deb
+
+2. Porque desde otros portales puede contener software malicioso
+
+3. Vive en /usr/bin/code
+Se instaló como un paquete .dep
+
