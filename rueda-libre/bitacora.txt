@@ -1,0 +1,18 @@
+RETO 1
+
+URL: http://127.0.0.1:5500/modulo-html-css/index.html
+Protocolo: http
+Host: 127.0.0.1
+Puerto: 5500
+Ruta: /index.html
+Método de la petición: GET
+Código del estado: 200
+
+Ruta /promociones.html
+Error 404 Not found
+
+ROLES
+html: Estructura el contenido
+css: Dar estilo a la página
+JavaScript: Define lo que hace la página cuando el usuario hace interacción
+
