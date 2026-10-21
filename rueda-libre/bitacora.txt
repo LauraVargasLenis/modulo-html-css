@@ -16,3 +16,12 @@ html: Estructura el contenido
 css: Dar estilo a la página
 JavaScript: Define lo que hace la página cuando el usuario hace interacción
 
+RUTAS:
+| Página de origen | Página de destino | Ruta relativa |
+|------------------|-------------------|---------------|
+| index.html | tarifas.html | paginas/tarifas.html |
+| index.html | reservas.html | paginas/reservas.html |
+| tarifas.html | index.html | ../index.html |
+| tarifas.html | reservas.html | reservas.html |
+| reservas.html | index.html | ../index.html |
+| reservas.html | tarifas.html | tarifas.html |
