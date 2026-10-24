@@ -12,46 +12,129 @@
             <h1>Reserva tu bicicleta</h1>
             <img src="../img/logo.png" alt="logo Rueda Libre" width="200">
         </section>
+    
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tarifas.html">Tarifas y rutas</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="tarifas.html">Tarifas y rutas</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-        </ul>
-    </nav>
     
-
-    <p>¿Listo para descubrir Medellín sobre dos ruedas?
-        <br>En Rueda Libre queremos acompañarte en tu próxima aventura. Contáctanos para consultar la disponibilidad de nuestras bicicletas y realizar tu reserva.
-    </p>
-
-    <h2>Contactános</h2>
-        <p>
-            ¿Quieres reservar una bicicleta o necesitas más información?
-            <br><strong>Correo electrónico</strong> <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+    <main>
+        <p>¿Listo para descubrir Medellín sobre dos ruedas?
+            <br>En Rueda Libre queremos acompañarte en tu próxima aventura. Contáctanos para consultar la disponibilidad de nuestras bicicletas y realizar tu reserva.
         </p>
-    
-    <section id="horarios">
-        <h2>Horarios de atención</h2>
-        <p>Consulta nuestros horarios y elige el momento ideal para comenzar tu aventura</p>
-        <dl>
-            <dt><strong>Lunes a viernes</strong></dt>
-                <dd>8:00 a.m - 5:00 p.m</dd>
-            <br>
-            <dt><strong>Sábados, domingos y festivos</strong></dt>
-                <dd>7:00 a.m - 3:00 p.m</dd>
-        </dl>
-    </section>
 
-    <br>
+        <section id="Reserva-bici">
+            <h2>Reserva tu bicicleta</h2>
+            <form action="gracias.html" method="post">
+                <fieldset>
+                    <legend><strong>Tus datos</strong></legend>
+                    <label for="nombre">Nombre completo: * </label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    <br><label for="correo">Correo electrónico: *</label>
+                        <input type="email" name="correo" id="correo" required>
+                    <br><label for="celular">Celular:</label>
+                        <input type="tel" name="celular" id="celular" pattern="3[0-9]{9}" maxlength="10"
+                        title="Ingresa un número de 10 dígitos que comience por 3">
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Tu alquiler</strong></legend>
+                    <p>¿Qué tipo de bicicleta deseas? *</p>
+                    <br>
+                    <input type="radio" name="tipo-bici" id="urbana" required>
+                        <label for="urbana">Bicicleta urbana</label>                
+                    <input type="radio" name="tipo-bici" id="montaña">
+                        <label for="montaña">Bicicleta de montaña</label>
+                    <input type="radio" name="tipo-bici" id="electrica">
+                        <label for="electrica">Bicicleta eléctrica</label>                
+                    <input type="radio" name="tipo-bici" id="familiar">
+                        <label for="familiar">Bicicleta familiar</label> 
+                    <br>
+                    <p>¿Cuántas bicicletas necesitas? *</p>
+                        <input type="number" min="1" required>
+                    <br>
+                    <p>¿Durante cuánto tiempo deseas alquilar la bicicleta? *</p>
+                        <br><input type="radio" name="tiempo" id="1hora" required>
+                            <label for="1hora">1 hora</label>
+                        <input type="radio" name="tiempo" id="2horas">
+                            <label for="2horas">2 horas</label>
+                        <input type="radio" name="tiempo" id="4horas">
+                            <label for="4horas">4 horas</label>
+                        <input type="radio" name="tiempo" id="dia-alquiler">
+                            <label for="dia-alquiler">Día completo</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Recorridos guiados</strong></legend>
+                    <p>¿Deseas participar en un recorrido guiado?</p>
+                        <br>
+                        <input type="radio" name="recorrido" id="si-recorrido" required>
+                            <label for="si-recorrido">Sí, quiero un recorrido guiado.</label>
+                        <input type="radio" name="recorrido" id="no-recorrido">
+                            <label for="no-recorrido">No, prefiero explorar la ciudad por mi cuenta.</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Fecha y preferencias de reserva</strong></legend>
+                    <label for="dia">¿Qué día deseas realizar tu recorrido?</label>
+                        <input type="date" name="dia" id="dia">
+                    <br>    
+                    <label for="hora">¿A qué hora deseas comenzar?</label>
+                        <input type="time" name="hora" id="hora">
+                    <br>
+                    <p>¿Necesitas algún accesorio adicional?</p>
+                        <br>
+                        <input type="checkbox" name="accesorios" id="casco">Casco
+                        <br>
+                        <input type="checkbox" name="accesorios" id="candado">Candado
+                        <br>
+                        <input type="checkbox" name="accesorios" id="chaleco">Chaleco reflectivo
+                        <br>
+                        <input type="checkbox" name="accesorios" id="ninguno">Ninguno
+                </fieldset>
+                <br>
+                <button type="submit">CONFIRMAR RESERVA</button>
+
+            </form>
+        </section>
+
+        <br>
+
+        <section id="contactenos">
+            <h2>Contactános</h2>
+                <p>
+                    ¿Quieres reservar una bicicleta o necesitas más información?
+                    <br><strong>Correo electrónico</strong> <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+                </p>
+        </section>
+        
+        <section id="horarios">
+            <h2>Horarios de atención</h2>
+            <p>Consulta nuestros horarios y elige el momento ideal para comenzar tu aventura</p>
+            <dl>
+                <dt><strong>Lunes a viernes</strong></dt>
+                    <dd>8:00 a.m - 5:00 p.m</dd>
+                <dt><strong>Sábados, domingos y festivos</strong></dt>
+                    <dd>7:00 a.m - 3:00 p.m</dd>
+            </dl>
+        </section>
+
+        <br>
+    </main>
     
-    <section>
-            Rueda Libre
-            <br><a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
-            <br>2026
-    </section>
+    <footer>
+        <address>
+            <p>
+                Rueda Libre
+                <br><a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+                <br>2026
+            </p>
+        </address>
+    </footer>
 
 
 </body>
