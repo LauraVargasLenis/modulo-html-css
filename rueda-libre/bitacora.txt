@@ -25,3 +25,19 @@ RUTAS:
 | tarifas.html | reservas.html | reservas.html |
 | reservas.html | index.html | ../index.html |
 | reservas.html | tarifas.html | tarifas.html |
+
+TESTEO FORMULARIO DE RESERVA
+## Pruebas del formulario de reservas - Rueda Libre
+
+| N.º | Campo evaluado | Prueba realizada | Resultado esperado |
+|---|---|---|---|
+| 1 | Nombre completo | Dejar el campo vacío e intentar enviar. | Se impide el envío porque el campo es obligatorio (`required`). |
+| 2 | Documento | Ingresar `12345`, un número de 5 dígitos. | Error. El documento debe contener entre 6 y 10 dígitos. |
+| 3 | Correo electrónico | Ingresar `lauragmail`, sin @. | Error. Formato de email necesita @ |
+| 4 | Celular | Ingresar `4001234567`, que tiene 10 dígitos, pero empieza por 4. | Error. El celular debe comenzar por 3. |
+| 5 | Cantidad de bicicletas | Ingresar `8` bicicletas. | Error. El máximo permitido es 6 bicicletas. |
+| 6 | Tipo de bicicleta | Intentar enviar sin seleccionar ninguna bicicleta. | Se exige seleccionar una de las opciones. |
+| 7 | Fecha de reserva | No deja elegir fecha por fuera del rango. | No deja elegir fecha por fuera del rango. |
+| 8 | Políticas de alquiler | Intentar confirmar la reserva sin aceptar las políticas de alquiler. | ❌ El navegador impide enviar el formulario porque el campo es obligatorio (`required`). |
+
+
