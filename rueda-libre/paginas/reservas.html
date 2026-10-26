@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Libre|Reservas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
-    <header>
-        <section id="reservas">
-            <h1>Reserva tu bicicleta</h1>
-            <img src="../img/logo.png" alt="logo Rueda Libre" width="200">
-        </section>
+    <header id="reservas">
+        <img src="../img/logo.png" alt="logo Rueda Libre" width="100">
+        <h1>Reserva tu bicicleta</h1> 
     
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="tarifas.html">Tarifas y rutas</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="reservas.html" class="activo">Reservas</a></li>
             </ul>
         </nav>
     </header>
@@ -127,7 +132,7 @@
                     <input type="checkbox" name="politicas" id="politicas" required>
                 <br>
                 <br>
-                <button type="submit">CONFIRMAR RESERVA</button>
+                <button type="submit" class="boton-primario">CONFIRMAR RESERVA</button>
 
             </form>
         </section>

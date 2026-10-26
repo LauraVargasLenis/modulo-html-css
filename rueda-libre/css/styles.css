@@ -1,0 +1,130 @@
+/* Colores base */
+
+:root {
+    --crema: #FAF6EF;
+    --azul-noche: #14213D;
+    --gris-asfalto: #5B6470;
+    --naranja-pedal: #F39A2B;
+    --verde-ruta: #1E7A4F;
+    --blanco: #FFFFFF;
+    --fuente-base: "Open Sans", Arial, sans-serif;
+    --fuente-titulos: "Montserrat", Arial, sans-serif;
+    --espacio1: 0.5rem;
+    --espacio2: 1rem;
+    --espacio3: 2rem;
+}
+
+
+body{
+    font-family: var(--fuente-base);
+    color: var(--azul-noche);
+    background-color: var(--crema);
+}
+
+header, nav, h1 {
+    font-family: var(--fuente-titulos);
+    color: #FFFFFF;
+    background-color: var(--azul-noche);
+
+    display: flex;
+    gap: var(--espacio2);
+}
+
+/*___________________________________________________________
+Menú y sus derivados
+____________________________________________________________*/
+#menu a {
+    color: var(--gris-asfalto);
+    background-color: var(--azul-noche);
+    text-decoration: none;
+}
+
+#menu a.activo {
+    color: var(--verde-ruta);
+    font-weight: 600;
+}
+
+#menu a:hover{
+    text-decoration: underline;
+    background-color: var(--crema);
+}
+
+#menu a:focus{
+    color: #FFFFFF;
+    background-color: var(--verde-ruta);
+}
+/*__________________________________________________________ */
+h2, h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--azul-noche);
+    background-color: var(--crema);
+}
+
+p {
+    font-family: var(--fuente-base);
+    color: var(--gris-asfalto);
+    background-color: var(--crema);
+}
+
+/*a{
+    font-family: var(--fuente-base);
+    color: var(--azul-noche);
+    background-color: var(--naranja-pedal);
+}*/
+
+footer, address {
+    font-family: var(--fuente-titulos);
+    color: #FFFFFF;
+    background-color: var(--azul-noche);
+}
+
+/*________________________________________________________________
+Apariencia de botones
+__________________________________________________________________*/
+
+.boton-primario{
+    background-color: var(--naranja-pedal);
+    color: var(--azul-noche);
+    text-decoration: none;
+    display: inline-block;
+    padding: var(--espacio1);
+    border-radius: 8px;
+}
+
+.boton-primario:hover{
+    background-color: var(--azul-noche);
+    color: #FFFFFF;
+}
+
+.boton-primario:focus{
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
+}
+
+/*_______________________________________________________________________
+Campos formulario
+________________________________________________________________________*/
+input:focus-visible{
+    outline: 3px solid var(--verde-ruta);
+}
+
+/*COLORES ESCOGIDOS PARA LA Página
+
+1. body: 
+    FONDO Crema #FAF6EF 
+    TEXTO Azul noche #14213D
+2. header, nav y footer: 
+    FONDO Azul noche #14213D 
+    TEXTO Blanco #FFFFFF
+3. h1...h6
+    FONDO Crema #FAF6EF
+    TEXTO Azul noche #14213D
+4. p
+    FONDO Crema #FAF6EF
+    TEXTO Gris Asfalto #5B6470
+5. Botones y botonesEnlaces
+    FONDO Naranja pedal #F39A2B
+    TEXTO Azul noche #14213D
+6. Destacados y botones seundarios 
+    FONDO Verde Ruta #1E7A4F
+    TEXTO Blanco #FFFFFF*/

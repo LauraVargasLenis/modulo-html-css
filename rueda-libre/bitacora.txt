@@ -92,3 +92,18 @@ COLORES ESCOGIDOS PARA LA Página
 
 
 ENLACE RUEDA LIBRE: https://lauravargaslenis.github.io/modulo-html-css/rueda-libre/
+
+
+##DIA 3
+RETO 9
+    Se hereda de body a p tanto el texto como el fondo
+    Y no se hereda de botones a p
+RETO 10
+    Página index, al hacer click en nav Inicio, las DevTools-Styles 
+    muestra a "#menu a" como activo, sin embargo ".activo" aparece tachado el color 
+    es decir, para este caso menú tiene prioridad a .activo
+
+    La propiedades van en el siguiente orde:
+    1. ID "lo que empiza con #"
+    2. clases "lo que va .clase y en class=clase"
+    3. elementos las etiquetas normales del html
