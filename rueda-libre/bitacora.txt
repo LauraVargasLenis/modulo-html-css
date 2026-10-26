@@ -40,4 +40,55 @@ TESTEO FORMULARIO DE RESERVA
 | 7 | Fecha de reserva | No deja elegir fecha por fuera del rango. | No deja elegir fecha por fuera del rango. |
 | 8 | Políticas de alquiler | Intentar confirmar la reserva sin aceptar las políticas de alquiler. | ❌ El navegador impide enviar el formulario porque el campo es obligatorio (`required`). |
 
+COMPARACIÓN DE COLORES
+1. TEXTO BLANCO SOBRE VERDE RUTA: 
+    Contraste 5.31:1
+    Indicando que pasa todas las pruebas en nivel normal de las WCAG
+    Sin embargo para el "Normal text" no pasa el nivel exigente
+2. TEXTO BLANCO SOBRE NARANJA PEDAL
+    Contraste 2.21:1
+    NO APTO
+3. TEXTO AZUL NOCHE SOBRE NARANJA PEDAL
+    Contraste
+    Apto para todo
+4.TEXTO AZUL NOCHE SOBRE CREMA
+    Contraste 14.82:1
+    Apto para todo
+5.TEXTO GRIS ASFALTO SOBRE CREMA
+    Contraste 5.56:1
+    Indicando que pasa todas las pruebas en nivel normal de las WCAG
+    Sin embargo para el "Normal text" no pasa el nivel exigente
+6. TEXTO VERDE RUTA SOBRE CREMA
+    Contraste 4.93:1
+    Indicando que pasa todas las pruebas en nivel normal de las WCAG
+    Sin embargo para el "Normal text" no pasa el nivel exigente
+7. TEXTO NARANJA PEDAL SOBRE CREMA
+    Contraste 2.05:1
+    NO APTO
+8. TEXTO BLANCO SOBRE AZUL NOCHE
+    Contraste 15.97
+    Apto para todo
 
+COLORES ESCOGIDOS PARA LA Página
+
+1. body: 
+    FONDO Crema #FAF6EF 
+    TEXTO Azul noche #14213D
+2. header, nav y footer: 
+    FONDO Azul noche #14213D 
+    TEXTO Blanco #FFFFFF
+3. h1...h6
+    FONDO Crema #FAF6EF
+    TEXTO Azul noche #14213D
+4. p
+    FONDO Crema #FAF6EF
+    TEXTO Gris Asfalto #5B6470
+5. Botones y botonesEnlaces
+    FONDO Naranja pedal #F39A2B
+    TEXTO Azul noche #14213D
+6. Destacados y botones seundarios 
+    FONDO Verde Ruta #1E7A4F
+    TEXTO Blanco #FFFFFF
+
+
+ENLACE RUEDA LIBRE: https://lauravargaslenis.github.io/modulo-html-css/rueda-libre/
