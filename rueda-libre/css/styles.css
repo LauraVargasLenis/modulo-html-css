@@ -18,7 +18,18 @@
 body{
     font-family: var(--fuente-base);
     color: var(--azul-noche);
+    background-color: var(--crema);    
+}
+
+main{
+    font-family: var(--fuente-base);
+    color: var(--azul-noche);
     background-color: var(--crema);
+    box-sizing: border-box;
+    padding: var(--espacio2);
+    max-width: 60rem;
+    margin: 0 auto;
+    width: 90%;
 }
 
 header, nav, h1 {
@@ -28,6 +39,9 @@ header, nav, h1 {
 
     display: flex;
     gap: var(--espacio2);
+    box-sizing: border-box;
+    border: var(--espacio1);
+    padding: var(--espacio1)
 }
 
 /*___________________________________________________________
@@ -73,13 +87,15 @@ p {
 }*/
 
 footer, address {
+    display: block;
     font-family: var(--fuente-titulos);
     color: #FFFFFF;
     background-color: var(--azul-noche);
+    padding: var(--espacio1);
 }
 
 /*________________________________________________________________
-Apariencia de botones
+Apariencia de botones y links
 __________________________________________________________________*/
 
 .boton-primario{
@@ -99,6 +115,11 @@ __________________________________________________________________*/
 .boton-primario:focus{
     background-color: var(--verde-ruta);
     color: #FFFFFF;
+}
+
+.correo{
+    text-decoration: none;
+    color: var(--naranja-pedal);
 }
 
 /*_______________________________________________________________________
