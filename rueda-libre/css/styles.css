@@ -180,6 +180,7 @@ _______________________________________________________________________*/
     border-radius: var(--espacio3);
     border: 1px solid var(--azul-noche);
     flex: 1 1 16rem;
+    position: relative;
 }
 
 .tarjeta img {
@@ -209,9 +210,33 @@ td{
 }
 
 /*____________________________________________________________________________
-###
+Etiquetas
 _____________________________________________________________________________*/
+.etiqueta {
+    position: absolute;
+    top: var(--espacio1);
+    right: var(--espacio1);
+    background-color: var(--naranja-pedal);
+    color: var(--azul-noche);
+    border-radius: 8px;
+    padding: var(--espacio1);
+}
 
+.whatsapp{
+    position: fixed;
+    bottom: var(--espacio2);
+    right: var(--espacio2);
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
+    padding: var(--espacio1);
+    border-radius: 8px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+/*.whatsapp img{
+    width: 100%;
+}*/
 
 /*COLORES ESCOGIDOS PARA LA Página
 
