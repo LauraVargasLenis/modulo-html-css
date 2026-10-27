@@ -107,3 +107,10 @@ RETO 10
     1. ID "lo que empiza con #"
     2. clases "lo que va .clase y en class=clase"
     3. elementos las etiquetas normales del html
+
+RETO 11
+Tarjera con box
+- margin 0
+- border 0.8
+- padding 16
+- content 179.913x499.762

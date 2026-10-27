@@ -39,70 +39,49 @@
                     <legend><strong>Tus datos</strong></legend>
                     <label for="nombre">Nombre completo: * </label>
                         <input type="text" id="nombre" name="nombre" required>
-                    <br><label for="documento">Documento *</label>
+                    <label for="documento">Documento *</label>
                         <input type="text" name="documento" id="documento" pattern="[0-9]{6,10}" title="solo números, entre 6 y 10 dígitos." required>
-                    <br><label for="correo">Correo electrónico: *</label>
+                    <label for="correo">Correo electrónico: *</label>
                         <input type="email" name="correo" id="correo" required>
-                    <br><label for="celular">Celular: *</label>
+                    <label for="celular">Celular: *</label>
                         <input type="tel" name="celular" id="celular" pattern="3[0-9]{9}" maxlength="10"
                         title="Ingresa un número de 10 dígitos que comience por 3" required>
                 </fieldset>
 
                 <fieldset>
                     <legend><strong>Tu alquiler</strong></legend>
-                    <p>¿Qué tipo de bicicleta deseas? *</p>
-                    <input type="radio" name="tipo-bici" id="urbana" required>
-                        <label for="urbana">Bicicleta urbana</label>                
-                    <input type="radio" name="tipo-bici" id="montaña">
-                        <label for="montaña">Bicicleta de montaña</label>
-                    <input type="radio" name="tipo-bici" id="electrica">
-                        <label for="electrica">Bicicleta eléctrica</label>                                 
-                    <br><label for="cantidad-bicis">¿Cuántas bicicletas necesitas? *</label>
+                    <label for="tipo-bici">¿Qué tipo de bicicleta deseas? *</label>
+                    <input type="radio" name="tipo-bici" id="urbana" required> Bicicleta urbana               
+                    <input type="radio" name="tipo-bici" id="montaña">Bicicleta de montaña
+                    <input type="radio" name="tipo-bici" id="electrica">Bicicleta eléctrica  
+
+                    <br>
+                    <label for="cantidad-bicis">¿Cuántas bicicletas necesitas? *</label>
                         <input type="number" name="cantidad-bicis" min="1" max="6" title="Puede alquilar entre 1 y 6 bicicletas" required>
-                    <p>¿Durante cuánto tiempo deseas alquilar la bicicleta? *</p>
-                        <input type="radio" name="tiempo" id="1hora" required>
-                            <label for="1hora">1 hora</label>
-                        <input type="radio" name="tiempo" id="4horas">
-                            <label for="4horas">4 horas</label>
-                        <input type="radio" name="tiempo" id="dia-alquiler">
-                            <label for="dia-alquiler">Día completo</label>
+
+                    <br>
+                     <label for="tiempo">¿Durante cuánto tiempo deseas alquilar la bicicleta? *</label>   
+                        <input type="radio" name="tiempo" id="1hora" required> 1 hora
+                        <input type="radio" name="tiempo" id="4horas">4 horas
+                        <input type="radio" name="tiempo" id="dia-alquiler">Día completo
                 </fieldset>
 
                 <fieldset>
                     <legend><strong>Recorridos guiados</strong></legend>
-                    <p>¿Deseas participar en un recorrido guiado?</p>
-                        <input type="radio" name="si-no-recorrido" id="si-recorrido" required>
-                            <label for="si-recorrido">Sí, quiero un recorrido guiado.</label>
-                        <input type="radio" name="si-no-recorrido" id="no-recorrido">
-                            <label for="no-recorrido">No, prefiero explorar la ciudad por mi cuenta.</label>
-                    <p>Selecciona tu recorrido</p>
-                        <input type="radio" name="recorrido" id="rios_parques" value="rios_parques" 
-                            required>
-                        <label for="rios_parques"><strong>Ríos y parques</strong> 
+                    <label for="si-no-recorrido">¿Deseas participar en un recorrido guiado?</label>
+                        <input type="radio" name="si-no-recorrido" id="si-recorrido" required>Sí, quiero un recorrido guiado.
+                        <input type="radio" name="si-no-recorrido" id="no-recorrido"> No, prefiero explorar la ciudad por mi cuenta.
+
+                    <label for="recorrido">Selecciona tu recorrido</label>
+                        <input type="radio" name="recorrido" id="rios_parques" required><strong>Ríos y parques</strong> 
                             - 12 km | 2 horas | Fácil | $45.000 por persona
-                        </label>
-
-                        <br><br>
-
-                        <input type="radio" 
-                            name="recorrido" 
-                            id="sabores_barrio" 
-                            value="sabores_barrio">
-                        <label for="sabores_barrio">
-                            <strong>Sabores del barrio</strong> 
+                        
+                        <br><input type="radio" name="recorrido" id="sabores_barrio" value="sabores_barrio"><strong>Sabores del barrio</strong> 
                             - 18 km | 3 horas | Medio | $60.000 por persona
-                        </label>
 
-                        <br><br>
-
-                        <input type="radio" 
-                            name="recorrido" 
-                            id="reto_palmas" 
-                            value="reto_palmas">
-                        <label for="reto_palmas">
-                            <strong>Reto Las Palmas</strong> 
+                        <br><input type="radio" name="recorrido" id="reto_palmas"><strong>Reto Las Palmas</strong> 
                             - 25 km | 4 horas | Difícil | $85.000 por persona
-                        </label>
+
                 </fieldset>
 
                 <fieldset>
@@ -114,7 +93,7 @@
                     <label for="hora">¿A qué hora deseas comenzar?</label>
                         <input type="time" name="hora" id="hora">
                     <br>
-                    <p>¿Necesitas algún accesorio adicional?</p>
+                    <label for="accesorios">¿Necesitas algún accesorio adicional?</label>
                         <input type="checkbox" name="accesorios" id="casco">Casco
                         <br>
                         <input type="checkbox" name="accesorios" id="candado">Candado
@@ -132,7 +111,7 @@
                     <input type="checkbox" name="politicas" id="politicas" required>
                 <br>
                 <br>
-                <button type="submit" class="boton-primario">CONFIRMAR RESERVA</button>
+                <button type="submit" >CONFIRMAR RESERVA</button>
 
             </form>
         </section>

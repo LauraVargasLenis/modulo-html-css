@@ -14,6 +14,10 @@
     --espacio3: 2rem;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 
 body{
     font-family: var(--fuente-base);
@@ -27,9 +31,10 @@ main{
     background-color: var(--crema);
     box-sizing: border-box;
     padding: var(--espacio2);
-    max-width: 60rem;
+    max-width: 65rem;
     margin: 0 auto;
     width: 90%;
+    min-height: 100vh;
 }
 
 header, nav, h1 {
@@ -44,9 +49,22 @@ header, nav, h1 {
     padding: var(--espacio1)
 }
 
+header nav {
+    margin-left: auto;
+}
+
 /*___________________________________________________________
 Menú y sus derivados
 ____________________________________________________________*/
+#menu {
+    display: flex;
+    list-style: none;
+    gap: var(--espacio2);
+    align-items: center;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
 #menu a {
     color: var(--gris-asfalto);
     background-color: var(--azul-noche);
@@ -128,6 +146,72 @@ ________________________________________________________________________*/
 input:focus-visible{
     outline: 3px solid var(--verde-ruta);
 }
+
+form label{
+    display: block;
+    margin-bottom: var(--espacio1);
+}
+
+form input, form select, form textarea {
+    margin-bottom: var(--espacio2);
+    border-radius: var(--espacio1);
+    background-color: var(--crema);
+}
+
+form button{
+    padding: var(--espacio2);
+    background-color: var(--naranja-pedal);
+    color: var(--azul-noche);
+    border-radius: 8px;
+}
+
+/*______________________________________________________________________
+Tarjetas
+_______________________________________________________________________*/
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio2)
+}
+
+.tarjeta{
+    padding: var(--espacio2);
+    border-radius: var(--espacio3);
+    border: 1px solid var(--azul-noche);
+    flex: 1 1 16rem;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+/*__________________________________________________________________________
+Tablas
+__________________________________________________________________________*/
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid var(--crema);
+    padding: var(--espacio1);
+    background-color: var(--azul-noche);
+    color: var(--crema);
+}
+
+td{
+    border: 1px solid var(--azul-noche);
+    padding: var(--espacio1);
+}
+
+/*____________________________________________________________________________
+###
+_____________________________________________________________________________*/
+
 
 /*COLORES ESCOGIDOS PARA LA Página
 
