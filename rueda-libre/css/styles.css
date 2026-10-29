@@ -37,7 +37,25 @@ main{
     min-height: 100vh;
 }
 
-header, nav, h1 {
+header {
+    font-family: var(--fuente-titulos);
+    color: #FFFFFF;
+    background-color: var(--azul-noche);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    box-sizing: border-box;
+    border: var(--espacio1);
+    padding: var(--espacio1);
+}
+
+header nav {
+    margin-left: auto;
+}
+
+nav, h1 {
     font-family: var(--fuente-titulos);
     color: #FFFFFF;
     background-color: var(--azul-noche);
@@ -49,10 +67,6 @@ header, nav, h1 {
     padding: var(--espacio1)
 }
 
-header nav {
-    margin-left: auto;
-}
-
 /*___________________________________________________________
 Menú y sus derivados
 ____________________________________________________________*/
@@ -61,8 +75,10 @@ ____________________________________________________________*/
     list-style: none;
     gap: var(--espacio2);
     align-items: center;
-    margin-right: auto;
-    justify-content: space-between;
+    justify-content: end ;
+    gap: var(--espacio2);
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 #menu a {
@@ -105,11 +121,16 @@ p {
 }*/
 
 footer, address {
-    display: block;
+    display: flex;
     font-family: var(--fuente-titulos);
     color: #FFFFFF;
     background-color: var(--azul-noche);
-    padding: var(--espacio1);
+    padding: var(--espacio2);
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
 }
 
 /*________________________________________________________________
@@ -188,6 +209,22 @@ _______________________________________________________________________*/
     height: auto;
 }
 
+.contenedor-flota{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    row-gap: var(--espacio2);
+    column-gap: var(--espacio2);
+}
+
+/*.contenedor-flota .tarjeta{
+    display: flex;
+}*/
+
+/*.tarjeta img {
+    width: 100%;
+    height: auto;
+}*/
+
 /*__________________________________________________________________________
 Tablas
 __________________________________________________________________________*/
@@ -221,6 +258,13 @@ _____________________________________________________________________________*/
     border-radius: 8px;
     padding: var(--espacio1);
 }
+
+/*.contenedor-flota .boton-primario{
+    position:static;
+    align-items: center;
+    justify-content: center;
+    flex-direction: ;
+}*/
 
 .whatsapp{
     position: fixed;
