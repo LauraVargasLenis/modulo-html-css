@@ -216,9 +216,10 @@ _______________________________________________________________________*/
     column-gap: var(--espacio2);
 }
 
-/*.contenedor-flota .tarjeta{
+.contenedor-flota .tarjeta{
     display: flex;
-}*/
+    flex-direction: column;
+}
 
 /*.tarjeta img {
     width: 100%;
@@ -259,12 +260,10 @@ _____________________________________________________________________________*/
     padding: var(--espacio1);
 }
 
-/*.contenedor-flota .boton-primario{
-    position:static;
-    align-items: center;
-    justify-content: center;
-    flex-direction: ;
-}*/
+.contenedor-flota .boton-primario{
+    margin-top: auto;
+    width: 50%;
+}
 
 .whatsapp{
     position: fixed;
@@ -281,6 +280,15 @@ _____________________________________________________________________________*/
 /*.whatsapp img{
     width: 100%;
 }*/
+
+/*________________________________________________________________________________________
+TEXTOS DIFERENTES
+________________________________________________________________________________________*/
+
+.precios{
+    color: var(--verde-ruta);
+    text-decoration: solid ;
+}
 
 /*COLORES ESCOGIDOS PARA LA Página
 

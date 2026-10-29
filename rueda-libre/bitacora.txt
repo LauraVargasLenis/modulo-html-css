@@ -114,3 +114,8 @@ Tarjera con box
 - border 0.8
 - padding 16
 - content 179.913x499.762
+
+SEMANA 2_______________________________________________________________________________
+1. - ANCHO 180: 3 columnas
+- ANCHO 900px: 2 columnas
+- ANCHO 500px: 1 columna
