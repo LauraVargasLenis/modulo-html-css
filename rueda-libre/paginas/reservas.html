@@ -32,99 +32,109 @@
             <br>En Rueda Libre queremos acompañarte en tu próxima aventura. Contáctanos para consultar la disponibilidad de nuestras bicicletas y realizar tu reserva.
         </p>
 
-        <section id="Reserva-bici">
-            <h2>Reserva tu bicicleta</h2>
-            <form action="gracias.html" method="post">
-                <fieldset>
-                    <legend><strong>Tus datos</strong></legend>
-                    <label for="nombre">Nombre completo: * </label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    <label for="documento">Documento *</label>
-                        <input type="text" name="documento" id="documento" pattern="[0-9]{6,10}" title="solo números, entre 6 y 10 dígitos." required>
-                    <label for="correo">Correo electrónico: *</label>
-                        <input type="email" name="correo" id="correo" required>
-                    <label for="celular">Celular: *</label>
-                        <input type="tel" name="celular" id="celular" pattern="3[0-9]{9}" maxlength="10"
-                        title="Ingresa un número de 10 dígitos que comience por 3" required>
-                </fieldset>
+        <div id="contenido-reservas">
+            
+            <section id="Reserva-bici">
+                <h2>Reserva tu bicicleta</h2>
+                <form action="gracias.html" method="post">
+                    <fieldset>
+                        <legend><strong>Tus datos</strong></legend>
+                        <article class="name-id">
+                            <div>
+                                <label for="nombre">Nombre completo: * </label>
+                                    <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div>
+                            <label for="documento">Documento *</label>
+                                <input type="text" name="documento" id="documento" pattern="[0-9]{6,10}" title="solo números, entre 6 y 10 dígitos." required>
+                            </div>
+                        </article>
+                        <label for="correo">Correo electrónico: *</label>
+                            <input type="email" name="correo" id="correo" required>
+                        <label for="celular">Celular: *</label>
+                            <input type="tel" name="celular" id="celular" pattern="3[0-9]{9}" maxlength="10"
+                            title="Ingresa un número de 10 dígitos que comience por 3" required>
+                    </fieldset>
 
-                <fieldset>
-                    <legend><strong>Tu alquiler</strong></legend>
-                    <label for="tipo-bici">¿Qué tipo de bicicleta deseas? *</label>
-                    <input type="radio" name="tipo-bici" id="urbana" required> Bicicleta urbana               
-                    <input type="radio" name="tipo-bici" id="montaña">Bicicleta de montaña
-                    <input type="radio" name="tipo-bici" id="electrica">Bicicleta eléctrica  
+                    <fieldset>
+                        <legend><strong>Tu alquiler</strong></legend>
+                        <label for="tipo-bici">¿Qué tipo de bicicleta deseas? *</label>
+                        <input type="radio" name="tipo-bici" id="urbana" required> Bicicleta urbana               
+                        <input type="radio" name="tipo-bici" id="montaña">Bicicleta de montaña
+                        <input type="radio" name="tipo-bici" id="electrica">Bicicleta eléctrica  
 
-                    <br>
-                    <label for="cantidad-bicis">¿Cuántas bicicletas necesitas? *</label>
-                        <input type="number" name="cantidad-bicis" min="1" max="6" title="Puede alquilar entre 1 y 6 bicicletas" required>
-
-                    <br>
-                     <label for="tiempo">¿Durante cuánto tiempo deseas alquilar la bicicleta? *</label>   
-                        <input type="radio" name="tiempo" id="1hora" required> 1 hora
-                        <input type="radio" name="tiempo" id="4horas">4 horas
-                        <input type="radio" name="tiempo" id="dia-alquiler">Día completo
-                </fieldset>
-
-                <fieldset>
-                    <legend><strong>Recorridos guiados</strong></legend>
-                    <label for="si-no-recorrido">¿Deseas participar en un recorrido guiado?</label>
-                        <input type="radio" name="si-no-recorrido" id="si-recorrido" required>Sí, quiero un recorrido guiado.
-                        <input type="radio" name="si-no-recorrido" id="no-recorrido"> No, prefiero explorar la ciudad por mi cuenta.
-
-                    <label for="recorrido">Selecciona tu recorrido</label>
-                        <input type="radio" name="recorrido" id="rios_parques" required><strong>Ríos y parques</strong> 
-                            - 12 km | 2 horas | Fácil | $45.000 por persona
-                        
-                        <br><input type="radio" name="recorrido" id="sabores_barrio" value="sabores_barrio"><strong>Sabores del barrio</strong> 
-                            - 18 km | 3 horas | Medio | $60.000 por persona
-
-                        <br><input type="radio" name="recorrido" id="reto_palmas"><strong>Reto Las Palmas</strong> 
-                            - 25 km | 4 horas | Difícil | $85.000 por persona
-
-                </fieldset>
-
-                <fieldset>
-                    <legend><strong>Fecha y preferencias de reserva</strong></legend>
-                    <label for="dia">¿Qué día deseas realizar tu recorrido?</label>
-                        <input type="date" name="dia" id="dia" min="2026-11-01" max="2026-12-31"
-                        title="Debe seleccionar una fecha entre el 1 de noviembre y el 31 de diciembre de 2026">
-                    <br>    
-                    <label for="hora">¿A qué hora deseas comenzar?</label>
-                        <input type="time" name="hora" id="hora">
-                    <br>
-                    <label for="accesorios">¿Necesitas algún accesorio adicional?</label>
-                        <input type="checkbox" name="accesorios" id="casco">Casco
                         <br>
-                        <input type="checkbox" name="accesorios" id="candado">Candado
+                        <label for="cantidad-bicis">¿Cuántas bicicletas necesitas? *</label>
+                            <input type="number" name="cantidad-bicis" min="1" max="6" title="Puede alquilar entre 1 y 6 bicicletas" required>
+
                         <br>
-                        <input type="checkbox" name="accesorios" id="chaleco">Chaleco reflectivo
+                        <label for="tiempo">¿Durante cuánto tiempo deseas alquilar la bicicleta? *</label>   
+                            <input type="radio" name="tiempo" id="1hora" required> 1 hora
+                            <input type="radio" name="tiempo" id="4horas">4 horas
+                            <input type="radio" name="tiempo" id="dia-alquiler">Día completo
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>Recorridos guiados</strong></legend>
+                        <label for="si-no-recorrido">¿Deseas participar en un recorrido guiado?</label>
+                            <input type="radio" name="si-no-recorrido" id="si-recorrido" required>Sí, quiero un recorrido guiado.
+                            <input type="radio" name="si-no-recorrido" id="no-recorrido"> No, prefiero explorar la ciudad por mi cuenta.
+
+                        <label for="recorrido">Selecciona tu recorrido</label>
+                            <input type="radio" name="recorrido" id="rios_parques" required><strong>Ríos y parques</strong> 
+                                - 12 km | 2 horas | Fácil | $45.000 por persona
+                            
+                            <br><input type="radio" name="recorrido" id="sabores_barrio" value="sabores_barrio"><strong>Sabores del barrio</strong> 
+                                - 18 km | 3 horas | Medio | $60.000 por persona
+
+                            <br><input type="radio" name="recorrido" id="reto_palmas"><strong>Reto Las Palmas</strong> 
+                                - 25 km | 4 horas | Difícil | $85.000 por persona
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>Fecha y preferencias de reserva</strong></legend>
+                        <label for="dia">¿Qué día deseas realizar tu recorrido?</label>
+                            <input type="date" name="dia" id="dia" min="2026-11-01" max="2026-12-31"
+                            title="Debe seleccionar una fecha entre el 1 de noviembre y el 31 de diciembre de 2026">
+                        <br>    
+                        <label for="hora">¿A qué hora deseas comenzar?</label>
+                            <input type="time" name="hora" id="hora">
                         <br>
-                        <input type="checkbox" name="accesorios" id="ninguno">Ninguno
-                </fieldset>
-                <br>
-                <label for="comentarios">Comentarios</label>
-                    <input type="text" name="comentarios" id="comentarios" maxlength="300">
-                <br>
-                <br>
-                <label for="politicas">Políticas de alquiler</label>
-                    <input type="checkbox" name="politicas" id="politicas" required>
-                <br>
-                <br>
-                <button type="submit" >CONFIRMAR RESERVA</button>
+                        <label for="accesorios">¿Necesitas algún accesorio adicional?</label>
+                            <input type="checkbox" name="accesorios" id="casco">Casco
+                            <br>
+                            <input type="checkbox" name="accesorios" id="candado">Candado
+                            <br>
+                            <input type="checkbox" name="accesorios" id="chaleco">Chaleco reflectivo
+                            <br>
+                            <input type="checkbox" name="accesorios" id="ninguno">Ninguno
+                    </fieldset>
+                    <br>
+                    <label for="comentarios">Comentarios</label>
+                        <input type="text" name="comentarios" id="comentarios" maxlength="300">
+                    <br>
+                    <br>
+                    <label for="politicas">Políticas de alquiler</label>
+                        <input type="checkbox" name="politicas" id="politicas" required>
+                    <br>
+                    <br>
+                    <button type="submit" >CONFIRMAR RESERVA</button>
 
-            </form>
-        </section>
+                </form>
+            </section>
 
-        <br>
+            
 
-        <section id="contactenos">
-            <h2>Contactános</h2>
-                <p>
-                    ¿Quieres reservar una bicicleta o necesitas más información?
-                    <br><strong>Correo electrónico</strong> <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
-                </p>
-        </section>
+            <section id="contactenos">
+                <h2>Contactános</h2>
+                    <p>
+                        ¿Quieres reservar una bicicleta o necesitas más información?
+                        <br><strong>Correo electrónico</strong> <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+                    </p>
+            </section>
+            
+        </div>
         
         <section id="horarios">
             <h2>Horarios de atención</h2>

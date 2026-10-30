@@ -116,6 +116,16 @@ Tarjera con box
 - content 179.913x499.762
 
 SEMANA 2_______________________________________________________________________________
-1. - ANCHO 180: 3 columnas
+1. Se adecua de acuerto al tamaño de página, para que todo quede visible
+
+2. - ANCHO 180: 3 columnas
 - ANCHO 900px: 2 columnas
 - ANCHO 500px: 1 columna
+
+3. 
+- Portada: utilicé grid en la portada para que siempre se mantuvieran las dos columnas,
+una de texto y otra de imágenes
+- Galería: grid, para que tuviera la misma estructura de la flota y se viera uniforme
+- reservas: grid, para que conserve la estructura de las dos columnas
+- Fila del formulario: flex, para que se pongan en una línea cuando el tamaño de pantalla
+sea más reducido y se vea amigable

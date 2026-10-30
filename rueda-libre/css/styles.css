@@ -68,7 +68,7 @@ nav, h1 {
 }
 
 /*___________________________________________________________
-Menú y sus derivados
+Portada, Menú y sus derivados
 ____________________________________________________________*/
 #menu {
     display: flex;
@@ -101,6 +101,22 @@ ____________________________________________________________*/
     color: #FFFFFF;
     background-color: var(--verde-ruta);
 }
+
+#portada {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: var(--espacio2);
+}
+
+
+#contenido-reservas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--espacio2);
+    align-items: start;
+}
+
 /*__________________________________________________________ */
 h2, h3 {
     font-family: var(--fuente-titulos);
@@ -186,6 +202,16 @@ form button{
     border-radius: 8px;
 }
 
+/*.name-id {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}*/
+
+.name-id {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+}
 /*______________________________________________________________________
 Tarjetas
 _______________________________________________________________________*/
@@ -221,10 +247,6 @@ _______________________________________________________________________*/
     flex-direction: column;
 }
 
-/*.tarjeta img {
-    width: 100%;
-    height: auto;
-}*/
 
 /*__________________________________________________________________________
 Tablas
@@ -277,9 +299,6 @@ _____________________________________________________________________________*/
     z-index: 1000;
 }
 
-/*.whatsapp img{
-    width: 100%;
-}*/
 
 /*________________________________________________________________________________________
 TEXTOS DIFERENTES
