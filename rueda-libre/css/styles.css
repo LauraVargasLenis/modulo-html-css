@@ -22,7 +22,7 @@
 body{
     font-family: var(--fuente-base);
     color: var(--azul-noche);
-    background-color: var(--crema);    
+    background-color: var(--crema);
 }
 
 main{
@@ -31,7 +31,7 @@ main{
     background-color: var(--crema);
     box-sizing: border-box;
     padding: var(--espacio2);
-    max-width: 65rem;
+    max-width: 75rem;
     margin: 0 auto;
     width: 90%;
     min-height: 100vh;
@@ -43,12 +43,15 @@ header {
     background-color: var(--azul-noche);
 
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     
     box-sizing: border-box;
     border: var(--espacio1);
     padding: var(--espacio1);
+
+    text-align: center;
 }
 
 header nav {
@@ -70,7 +73,28 @@ nav, h1 {
 /*___________________________________________________________
 Portada, Menú y sus derivados
 ____________________________________________________________*/
+/*header {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    gap: var(--espacio2);
+}*/
+
 #menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--espacio3);
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+
+/*#menu {
     display: flex;
     list-style: none;
     gap: var(--espacio2);
@@ -79,7 +103,7 @@ ____________________________________________________________*/
     gap: var(--espacio2);
     flex-wrap: wrap;
     flex-direction: row;
-}
+}*/
 
 #menu a {
     color: var(--gris-asfalto);
@@ -102,20 +126,22 @@ ____________________________________________________________*/
     background-color: var(--verde-ruta);
 }
 
-#portada {
+/*#portada {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
     align-items: center;
     gap: var(--espacio2);
-}
+}*/
 
 
 #contenido-reservas {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     gap: var(--espacio2);
     align-items: start;
 }
+
+
 
 /*__________________________________________________________ */
 h2, h3 {
@@ -137,16 +163,14 @@ p {
 }*/
 
 footer, address {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     font-family: var(--fuente-titulos);
     color: #FFFFFF;
     background-color: var(--azul-noche);
-    padding: var(--espacio2);
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    gap: 10rem;
-    flex-wrap: wrap;
+    padding: var(--espacio1);
+    text-align: center;
+    gap: var(--espacio1);
 }
 
 /*________________________________________________________________
@@ -224,8 +248,8 @@ _______________________________________________________________________*/
 
 .tarjeta{
     padding: var(--espacio2);
-    border-radius: var(--espacio3);
-    border: 1px solid var(--azul-noche);
+    border-radius: var(--espacio2);
+    border: 0.1px solid var(--gris-asfalto);
     flex: 1 1 16rem;
     position: relative;
 }
@@ -235,17 +259,19 @@ _______________________________________________________________________*/
     height: auto;
 }
 
-.contenedor-flota{
+/*.contenedor-flota{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: 1fr;
     row-gap: var(--espacio2);
     column-gap: var(--espacio2);
 }
 
+
+
 .contenedor-flota .tarjeta{
     display: flex;
     flex-direction: column;
-}
+}*/
 
 
 /*__________________________________________________________________________
@@ -282,10 +308,10 @@ _____________________________________________________________________________*/
     padding: var(--espacio1);
 }
 
-.contenedor-flota .boton-primario{
+/*.contenedor-flota .boton-primario{
     margin-top: auto;
     width: 50%;
-}
+}*/
 
 .whatsapp{
     position: fixed;
@@ -307,6 +333,61 @@ ________________________________________________________________________________
 .precios{
     color: var(--verde-ruta);
     text-decoration: solid ;
+}
+
+/*________________________________________________________________________________
+para pantallas grandes
+________________________________________________________________________________*/
+
+@media (min-width:768px){
+    header{
+        /*justify-content: flex-start;*/
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: end;
+    }
+    #menu{
+        display: flex;
+        list-style: none;
+        gap: var(--espacio2);
+        align-items: center;
+        justify-content: end ;
+        gap: var(--espacio2);
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    /*#portada {
+        grid-template-columns: 1fr 3fr;
+    }*/
+    /*.contenedor-flota{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }*/
+    #contenido-reservas{
+        grid-template-columns: 2fr 1fr;
+    }
+    footer, address {
+        display: flex;
+        padding: var(--espacio2);
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        gap: 10rem;
+        flex-wrap: wrap;
+    }
+}
+
+/*_________________________________________________________________________________________________________________
+Personalización de los bootsrap
+__________________________________________________________________________________________________________________*/
+.card{
+    background-color: var(--crema);
+    .h5{
+        color: var(--azul-noche);
+    }
+}
+
+.card-tittle{
+    color: var(--azul-noche);
 }
 
 /*COLORES ESCOGIDOS PARA LA Página
