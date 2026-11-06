@@ -43,12 +43,12 @@ header {
     background-color: var(--azul-noche);
 
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     
-    box-sizing: border-box;
-    border: var(--espacio1);
+    /*box-sizing: border-box;
+    border: var(--espacio1);*/
     padding: var(--espacio1);
 
     text-align: center;
@@ -63,11 +63,11 @@ nav, h1 {
     color: #FFFFFF;
     background-color: var(--azul-noche);
 
-    display: flex;
+    /*display: flex;*/
     gap: var(--espacio2);
     box-sizing: border-box;
     border: var(--espacio1);
-    padding: var(--espacio1)
+    /*padding: var(--espacio1)*/
 }
 
 /*___________________________________________________________
@@ -82,17 +82,19 @@ ____________________________________________________________*/
 }*/
 
 #menu {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+    width: 100%;*/
     gap: var(--espacio3);
     padding: 0;
-    width: 100%;
-    justify-content: center;
     list-style: none;
-    align-items: center;
 }
 
+.navbar-toggler{
+    border-color: var(--crema);
+}
 
 /*#menu {
     display: flex;
@@ -111,10 +113,10 @@ ____________________________________________________________*/
     text-decoration: none;
 }
 
-#menu a.activo {
+/*#menu a.activo {
     color: var(--verde-ruta);
     font-weight: 600;
-}
+}*/
 
 #menu a:hover{
     text-decoration: underline;
@@ -343,14 +345,9 @@ ________________________________________________________________________________
         justify-content: end;
     }
     /*#menu{
-        display: flex;
         list-style: none;
         gap: var(--espacio2);
         align-items: center;
-        justify-content: end ;
-        gap: var(--espacio2);
-        flex-wrap: wrap;
-        flex-direction: row;
     }*/
     /*#portada {
         grid-template-columns: 1fr 3fr;
