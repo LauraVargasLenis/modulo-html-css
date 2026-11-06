@@ -134,12 +134,12 @@ ____________________________________________________________*/
 }*/
 
 
-#contenido-reservas {
+/*#contenido-reservas {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--espacio2);
     align-items: start;
-}
+}*/
 
 
 
@@ -226,16 +226,12 @@ form button{
     border-radius: 8px;
 }
 
-/*.name-id {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}*/
 
-.name-id {
+/*.name-id {
     display: flex;
     flex-wrap: wrap;
     column-gap: 5rem;
-}
+}*/
 /*______________________________________________________________________
 Tarjetas
 _______________________________________________________________________*/
@@ -279,7 +275,7 @@ Tablas
 __________________________________________________________________________*/
 
 table{
-    width: 90%;
+    width: 100%;
     border-collapse: collapse;
 }
 
@@ -346,7 +342,7 @@ ________________________________________________________________________________
         flex-direction: row;
         justify-content: end;
     }
-    #menu{
+    /*#menu{
         display: flex;
         list-style: none;
         gap: var(--espacio2);
@@ -355,16 +351,16 @@ ________________________________________________________________________________
         gap: var(--espacio2);
         flex-wrap: wrap;
         flex-direction: row;
-    }
+    }*/
     /*#portada {
         grid-template-columns: 1fr 3fr;
     }*/
     /*.contenedor-flota{
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }*/
-    #contenido-reservas{
+    /*#contenido-reservas{
         grid-template-columns: 2fr 1fr;
-    }
+    }*/
     footer, address {
         display: flex;
         padding: var(--espacio2);

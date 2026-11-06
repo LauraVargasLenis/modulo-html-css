@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Libre|Tarifas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <header>
-        <section>
         <img src="../img/logo.png" alt="logo Rueda Libre" width="100">
         <h1>Nuestras Tarifas</h1>
-        </section>
         <nav>
             <ul id="menu">
                 <li><a href="../index.html">Inicio</a></li>
@@ -29,13 +33,11 @@
 
     <main>
 
-        <p>Las tarifas varían de acuerdo con el tipo de bicicleta
-            y la duración del recorrido.
-        </p>
-
-        <section id="tarifasbicis">
-            <table>
-                <caption><h2><strong>Tarifa por tipo de bicicleta</strong></h2></caption>
+        <section id="tarifasbicis" class="row g-5 p-2 align-items-center">
+            <table class="table-responsive col-12 col-lg-8">
+                <caption class="caption-top">
+                    <h2><strong>Tarifa por tipo de bicicleta</strong></h2>
+                </caption>
                 <tr>
                     <th>Tipo de bicicleta</th>
                     <th>1 hora</th>
@@ -63,14 +65,28 @@
                     <td>$70.000</td>
                     <td>110.000</td>
                 </tr>
-                
+
             </table>
+
+
+            <aside class="col-12 col-lg-3">
+                <p>
+                    <strong>Información sobre las tarifas</strong>
+                    <br>Las tarifas varían de acuerdo con el tipo
+                    de bicicleta y la duración del recorrido.
+                </p>
+            </aside>
+
         </section>
-    
-        <section id="recorridos">
-            <table>
-                <caption><h2><strong>Tarifas por recorrido</strong></h2></caption>
-                
+
+        <br>
+
+        <section id="recorridos" class="row g-5 p align-items-center">
+            <table class="table-responsive col-12 col-lg-8">
+                <caption class="caption-top">
+                    <h2><strong>Tarifas por recorrido</strong></h2>
+                </caption>
+
                 <tr>
                     <th>Recorrido</th>
                     <th>Distancia</th>
@@ -102,22 +118,30 @@
                     <td>Difícil</td>
                     <td>$85.000</td>
                 </tr>
-            
-            </table>
-            
-            <br>
-            <a href="reservas.html#reservas" class="boton-primario">Reserva ahora</a>
 
-            <p>
+            </table>
+
+            <aside class="col-12 col-lg-4">
+                <p>
                     <strong>Importante:</strong>
-                    Todas las tarifas incluyen casco y candado. Los recorridos salen sábados y domingos a las 7:00 a. m. 
+                    Todas las tarifas incluyen casco y candado. Los recorridos salen sábados y domingos a las 7:00 a. m.
                     <br><strong>Qué llevar:</strong> ropa cómoda, agua, protector solar y documento de identidad.
-            </p>
+                </p>
+            </aside>
+
         </section>
+
+        <br><br>
+
+        <aside>
+            <a href="reservas.html#reservas" class="boton-primario">Reserva ahora</a>
+        </aside>
+
+
     </main>
 
     <br>
-    
+
     <footer>
         <address>
             Rueda Libre
@@ -125,9 +149,10 @@
             2026
         </address>
     </footer>
-    
-<a href="https://wa.me/573000000000" class="whatsapp" 
-taget="_blank" aria-label="Contactanos por WPP" rel="noopener noreferrer"><img src="../img/WhatsApp.svg.webp" alt="WPP" width="50"></a>
 
+    <a href="https://wa.me/573000000000" class="whatsapp" taget="_blank" aria-label="Contactanos por WPP"
+        rel="noopener noreferrer"><img src="../img/WhatsApp.svg.webp" alt="WPP" width="50"></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
