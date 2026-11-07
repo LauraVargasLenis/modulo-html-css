@@ -12,6 +12,8 @@
     --espacio1: 0.5rem;
     --espacio2: 1rem;
     --espacio3: 2rem;
+    --bs-body-font-family: "Open Sans", Arial, sans-serif;
+    --bs-title-font-family: "Montserrat", Arial, sans-serif;
 }
 
 *{
@@ -27,7 +29,7 @@ body{
 
 main{
     font-family: var(--fuente-base);
-    color: var(--azul-noche);
+    color: var(--gris-asfalto);
     background-color: var(--crema);
     box-sizing: border-box;
     padding: var(--espacio2);
@@ -153,11 +155,11 @@ h2, h3 {
     background-color: var(--crema);
 }
 
-p {
+/*p {
     font-family: var(--fuente-base);
     color: var(--gris-asfalto);
     background-color: var(--crema);
-}
+}*/
 
 /*a{
     font-family: var(--fuente-base);
@@ -174,7 +176,14 @@ footer, address {
     padding: var(--espacio1);
     text-align: center;
     gap: var(--espacio1);
+    
+    .p{
+        color: #FFFFFF;
+        background-color: var(--azul-noche);
+    }
 }
+
+
 
 /*________________________________________________________________
 Apariencia de botones y links carrusel
@@ -235,20 +244,20 @@ __________________________________________________________________*/
 /*_______________________________________________________________________
 Campos formulario
 ________________________________________________________________________*/
-input:focus-visible{
+/*input:focus-visible{
     outline: 3px solid var(--verde-ruta);
-}
+}*/
 
-form label{
+/*form label{
     display: block;
     margin-bottom: var(--espacio1);
-}
+}*/
 
-form input, form select, form textarea {
+/*form input, form select, form textarea {
     margin-bottom: var(--espacio2);
     border-radius: var(--espacio1);
     background-color: var(--crema);
-}
+}*/
 
 form button{
     padding: var(--espacio2);
@@ -257,12 +266,14 @@ form button{
     border-radius: 8px;
 }
 
-
 /*.name-id {
     display: flex;
     flex-wrap: wrap;
     column-gap: 5rem;
 }*/
+
+
+
 /*______________________________________________________________________
 Tarjetas
 _______________________________________________________________________*/
@@ -415,6 +426,70 @@ ________________________________________________________________________________
 .card-tittle{
     color: var(--azul-noche);
 }
+
+/* con bootstrap*/
+form{
+    .form-label{
+        color: var(--azul-noche);
+    }
+    .form-control{
+        background-color: var(--crema);
+        color: var(--azul-noche);    
+    }
+    .form-control:focus-visible {
+        outline: 3px solid var(--verde-ruta);
+    }
+    .form-check-input:focus-visible{
+        outline: 3px solid var(--verde-ruta);
+    }
+
+}
+
+.alert{
+    --bs-alert-border-color: var(--verde-ruta);
+    --bs-alert-bg: var(--verde-ruta);
+    opacity: 0.7;
+    --bs-alert-color: var(--crema);
+    
+}
+
+.btn-outline-dark {
+    --bs-btn-bg: var(--crema);
+    --bs-btn-border-color: var(--verde-ruta);
+    --bs-btn-color: var(--verde-ruta);
+    --bs-btn-hover-bg: var(--azul-noche);
+    --bs-btn-hover-color: #FFFFFF;
+    --bs-btn-focus-bg: var(--verde-ruta);
+    --bs-btn-focus-color: #FFFFFF;
+    
+}
+
+#modalPoliticas {
+    .modal-header {
+        background-color: var(--azul-noche);
+        border-bottom-color: var(--azul-noche);
+    }
+    .modal-title {
+        color: var(--blanco);
+        background-color: transparent;
+    }
+    .btn-close {
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
+    .modal-content {
+        --bs-modal-bg: var(--crema);
+        --bs-modal-color: var(--azul-noche);
+        --bs-modal-border-color: var(--verde-ruta);
+    }
+    .btn{
+        background-color: var(--naranja-pedal);
+        color: var(--azul-noche);
+        border:none;
+    }
+}
+
+
+
 
 /*COLORES ESCOGIDOS PARA LA Página
 
