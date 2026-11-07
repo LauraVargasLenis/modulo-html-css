@@ -94,6 +94,7 @@ ____________________________________________________________*/
 
 .navbar-toggler{
     border-color: var(--crema);
+    
 }
 
 /*#menu {
@@ -109,7 +110,7 @@ ____________________________________________________________*/
 
 #menu a {
     color: var(--gris-asfalto);
-    background-color: var(--azul-noche);
+    /*background-color: var(--crema);*/
     text-decoration: none;
 }
 
@@ -176,10 +177,22 @@ footer, address {
 }
 
 /*________________________________________________________________
-Apariencia de botones y links
+Apariencia de botones y links carrusel
 __________________________________________________________________*/
+/*COLORES modificación bootstrap*/
+.btn-warning {
+    --bs-btn-bg: var(--naranja-pedal);
+    --bs-btn-border-color: var(--naranja-pedal);
+    --bs-btn-color: var(--azul-noche);
+    --bs-btn-hover-bg: var(--azul-noche);
+    --bs-btn-hover-color: #FFFFFF;
+    --bs-btn-focus-bg: var(--verde-ruta);
+    --bs-btn-focus-color: #FFFFFF;
+    
+}
 
-.boton-primario{
+
+/*.boton-primario{
     background-color: var(--naranja-pedal);
     color: var(--azul-noche);
     text-decoration: none;
@@ -196,11 +209,27 @@ __________________________________________________________________*/
 .boton-primario:focus{
     background-color: var(--verde-ruta);
     color: #FFFFFF;
-}
+}*/
 
 .correo{
     text-decoration: none;
     color: var(--naranja-pedal);
+}
+
+
+#carruselPromos .carousel-control-prev,
+#carruselPromos .carousel-control-next {
+    width: 3.2rem;
+    height: 3.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    opacity: 0.95;
+    position: absolute;
+}
+
+#carruselPromos img{
+    height: 300px;
 }
 
 /*_______________________________________________________________________
@@ -366,6 +395,10 @@ ________________________________________________________________________________
         align-content: center;
         gap: 10rem;
         flex-wrap: wrap;
+    }
+    #carruselPromos img{
+        height: 400px;
+        width: 75%;
     }
 }
 
