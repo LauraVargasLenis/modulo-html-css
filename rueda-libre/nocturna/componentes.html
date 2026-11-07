@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes | Rueda Nocturna</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-slate-950 text-white">
+
+    <main class="mx-auto max-w-6xl px-6 py-12">
+
+        <h1 class="text-4xl font-bold mb-8">
+            Kit de componentes Rueda Nocturna
+        </h1>
+
+        <section id="botones">
+            <h2 class="mb-6 text-3xl font-bold">Botones</h2>
+            <div class="flex flex-wrap gap-3">
+                <button class="bg-amber-400 text-slate-950 px-6 py-3 rounded-lg font-bold hover:bg-blue-300 focus-visible:bg-green-300 ring-2">
+                    Inscríbete aquí
+                </button >
+                <button type="button"
+                    class="bg-slate-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-300 focus-visible:bg-green-300 ring-2">
+                    Info
+                </button>
+                <button type="button"
+                    class="border-2 border-green-400 text-green-400 px-6 py-3 rounded-lg font-bold hover:bg-blue-300 hover:text-slate-950 focus-visible:bg-green-300 focus-visible:text-slate-950 ring-2">
+                    Botón 3
+                </button>   
+            </div>
+        </section>
+        <br>
+        <section id="tarjetas">
+            <h2 class="mb-6 text-3xl font-bold">Tarjetas</h2>
+            <article class="border border-slate-700 rounded-lg p-6 bg-slate-900 shadow-md hover:shadow-xl flex flex-col gap-3">
+                <img src="img/luces-centro.jpg" alt="luces del centro" class="w-full h-48 object-cover rounded-lg">
+                <h3 class="mb-4 text-2xl font-bold">Luces del Centro</h3>
+                <ul>
+                    <li>Distancia: 10 km</li>
+                    <li>Duración: 2 horas</li>
+                    <li>Punto de encuentro: Sede Rueda Libre</li>
+                </ul>
+                <p class="text-green-400 font-semibold">Nivel: Fácil</p>
+                <p class="text-2xl font-bold mt-auto">$55.000</p>
+                <a href="#inscripcion"  class="inline-block self-start bg-amber-400 text-slate-950 px-6 py-3 rounded-lg font-bold hover:bg-blue-300 focus-visible:bg-green-300 ring-2">
+                    Inscríbete aquí
+                </a>
+            </article>
+        </section>
+
+        <br>
+
+        <section id="alertas">
+            <h2 class="mb-6 text-3xl font-bold">Alertas</h2>
+             <div class="flex flex-col gap-4">
+
+                <div role="status"
+                    class="bg-sky-950 border border-sky-500 rounded-lg p-4 text-sky-100">
+                    <strong>Información:</strong>
+                    Los recorridos salen de jueves a sábado a las 7:30 p. m.
+                </div>
+
+                <div role="status"
+                    class="bg-green-950 border border-green-500 rounded-lg p-4 text-green-100">
+                    <strong>Éxito:</strong>
+                    Tu inscripción fue registrada correctamente.
+                </div>
+
+                <div role="alert"
+                    class="bg-amber-950 border border-amber-500 rounded-lg p-4 text-amber-100">
+                    <strong>Advertencia:</strong>
+                    Recuerda llevar casco y chaleco reflectivo.
+                </div>
+
+            </div>
+        </section>
+
+        <br>
+
+        <section id="formularios">
+            <h2 class="mb-6 text-3xl font-bold">Campos de formulario</h2>
+            <form class="max-w-md">
+
+                <div class="mb-6">
+                    <label for="correo" class="block font-semibold mb-2">
+                        Correo electrónico
+                    </label>
+
+                    <input type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        aria-describedby="ayuda-correo"
+                        class="w-full bg-slate-900 text-white border border-slate-600 rounded-lg p-3 focus-visible:outline-2 focus-visible:outline-amber-400">
+
+                    <p id="ayuda-correo" class="text-sm text-slate-400 mt-2">
+                        Ingresa un correo válido
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <label for="celular" class="block font-semibold mb-2">
+                        Número de celular
+                    </label>
+
+                    <input type="tel"
+                        id="celular"
+                        name="celular"
+                        placeholder="3001234567"
+                        aria-describedby="ayuda-celular"
+                        class="w-full bg-slate-900 text-white border border-slate-600 rounded-lg p-3 focus-visible:outline-2 focus-visible:outline-amber-400">
+
+                    <p id="ayuda-celular" class="text-sm text-slate-400 mt-2">
+                        Escriba su número de contacto
+                    </p>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
