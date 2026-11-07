@@ -1,0 +1,5 @@
+Día 1
+
+En output encontré que la clase .bg-amber-400 sí aparece porque la utilicé
+para darle color de fondo al botón. En cambio, busqué .bg-pink-500 y no apareció
+porque no la he utilizado
