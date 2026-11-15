@@ -2,4 +2,51 @@ Día 1
 
 En output encontré que la clase .bg-amber-400 sí aparece porque la utilicé
 para darle color de fondo al botón. En cambio, busqué .bg-pink-500 y no apareció
-porque no la he utilizado
+porque no la he utilizado.
+
+________________________________________________________________________________________
+Día 3
+
+1. Clases reutilizables
+
+Identifiqué clases repetidas en los botones principales, las tarjetas de rutas y los pasos de «¿Cómo funciona?».
+
+Para mejorar la legibilidad del HTML, creé tres clases reutilizables mediante @layer components y @apply:
+.btn-principal
+.tarjeta-ruta
+.tarjeta-paso
+
+Reutilicé las clases en index.html
+
+2. Tamaño del CSS
+
+CSS de Tailwind sin minificar:21,3125 KB
+CSS de Tailwind minificado: 17,0244140625 KB
+CSS de Bootstrap: 33,8 KB
+JavaScript de Bootstrap: 25,2 KB
+
+3. Comparativa
+
+#Curva de aprendizaje
+
+Bootstrap resultó más sencillo de utilizar inicialmente, porque proporciona componentes previamente diseñados, como botones, tarjetas y barras de navegación.
+Tailwind requirió más tiempo de aprendizaje, especialmente para comprender sus utilidades, los breakpoints responsive, el funcionamiento del CLI y la personalización mediante @theme.
+Sin embargo, a medida que avanzó el desarrollo, sus clases se volvieron más fáciles de interpretar y combinar.
+
+#Personalización
+
+Bootstrap facilita construir interfaces con una apariencia consistente, aunque para conseguir diseños específicos puede ser necesario modificar sus estilos predeterminados
+Tailwind ofreció mayor flexibilidad para construir la identidad de Rueda Nocturna, permitiendo definir los colores de la marca, incorporar fuentes propias y adaptar cada componente sin depender de diseños previamente establecidos.
+En este criterio, Tailwind resultó más conveniente para el proyecto.
+
+#Tamaño final
+
+La versión minificada del CSS de Tailwind alcanzó 17,02 KiB. En la versión Bootstrap se identificaron recursos adicionales de CSS, JavaScript e iconografía.
+Aunque las mediciones todavía no permiten establecer una comparación exacta de transferencia de datos, evidencian una diferencia en la forma en que ambos proyectos utilizan los recursos del framework.
+Tailwind permite generar los estilos necesarios para la implementación, mientras que Bootstrap distribuye hojas de estilos y componentes que pueden incluir funcionalidades no utilizadas en una página específica.
+
+#Facilidad de uso y mantenimiento
+
+Bootstrap permitió avanzar rápidamente durante la construcción inicial de Rueda Libre, gracias a sus componentes y convenciones de diseño.
+Con Tailwind fue necesario escribir más clases directamente en el HTML, lo que inicialmente dificultó la lectura del código. Este inconveniente se redujo al implementar componentes reutilizables mediante @apply.
+Tailwind también facilitó realizar ajustes responsive y configurar el modo oscuro directamente desde sus utilidades, sin necesidad de crear numerosas reglas CSS adicionales.

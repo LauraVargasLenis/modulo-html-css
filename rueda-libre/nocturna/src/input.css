@@ -1,5 +1,7 @@
+
 @import "tailwindcss";
 
+/* COLORES DE MARCA */
 @theme {
     --color-verde-ruta: #1E7A4F;
     --color-azul-noche: #14213D;
@@ -10,4 +12,35 @@
 
     --font-titulos: "Montserrat", sans-serif;
     --font-cuerpo: "Open Sans", sans-serif;
+}
+
+/* COMPONENTES REUTILIZABLES*/
+@layer components {
+
+    /* Botón principal */
+    .btn-principal {
+        @apply inline-block bg-amarillo-farol text-azul-noche
+               px-6 py-3 rounded-lg font-bold
+               hover:bg-blue-300 
+               focus-visible:bg-green-300;
+    }
+
+    /* Tarjetas de las rutas */
+    .tarjeta-ruta {
+        @apply border border-gris-ruta/30 dark:border-crema/20
+               rounded-lg p-6 bg-white dark:bg-slate-900
+               text-azul-noche dark:text-crema
+               shadow-md hover:shadow-xl
+               flex flex-col gap-3;
+    }
+
+    /* Pasos de Cómo funciona */
+    .tarjeta-paso {
+        @apply bg-white dark:bg-slate-900
+               text-azul-noche dark:text-crema
+               border border-gris-ruta/30
+               dark:border-crema/20
+               rounded-lg p-6;
+    }
+
 }
